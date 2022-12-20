@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO App</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Heading -->
+    <h1 id="heading">TO-DO App</h1>
+
+    <!-- Main Container -->
+    <div class="container" id="container">
+      <div class="outer-frame">
+        <!-- Input field and form -->
+        <form class="input-box" id="input-box">
+          <input id="input" type="text" placeholder="Add TO-DO..." />
+        </form>
+
+        <div class="add-btn" id="add-btn">
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+
+      <!-- Dynamic Data Containers -->
+      <div id="list-container"></div>
+
+      <div class="clear" id="clear"></div>
+    </div>
+  </body>
+</html>
